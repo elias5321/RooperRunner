@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite 1</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.google.com/specimen/Vina+Sans" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="navbar">
+        <div class="header">
+            <a href="index.html" id="logo">Rooper Runner</a>
+        </div>
+        <div id="navbar-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="seite2.html">Über uns</a>
+          <a href="seite3.html">Kontakt</a>
+          <a href="seite2.html">Standort</a>
+          <a href="seite3.html">Neuigkeiten</a>
+        </div>
+      </div>
+
+    <main>
+        <h2>Hauptinhalt</h2>
+        <article>
+            <h3>Titel</h3>
+            <img src="../Bilder/ProfilBild.webp" width="100" alt="Platzhalter">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>$
+                labore
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                    ipsum
+                    dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet
+                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    
+        </article>
+        <article>
+            <h3>Titel</h3>
+            <img src="../Bilder/ProfilBild.webp" width="100" alt="Platzhalter">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Paragraph</p>
+        </article>
+    </main>
+    <aside>
+        <h2>Randspalte</h2>
+        <article>
+            <h3>Titel</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam</p>
+        </article>
+        <article>
+            <h3>Titel</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore
+                et dolore magna aliquyam</p>
+        </article>
+    </aside>
+    <footer>
+        <div>
+            <h3>Kontakt:</h3>
+            <p>Strasse 20<br>1000 Ort<br>Telefon:<br>Email:</p>
+        </div>
+        <div>
+            <h3>Social:</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Links:</h3>
+            <ul>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="disclamer.html">Disclamer</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+   
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+    </script>
+</html>
