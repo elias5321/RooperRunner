@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <div id="navbar">
         <a href="index.html" id="logo">Rooper Runner</a>
         <div id="navbar-right">
-          <a href="index.html">Home</a>
+          <a href="../index.html">Home</a>
           <a class="active" href="seite2.html">Über uns</a>
           <a href="seite3.html">Kontakt</a>
           <a href="seite4.html">Standort</a>
@@ -23,46 +23,27 @@
       </div>
 
     <main>
-        <h2>Hauptinhalt</h2>
+        <h2>Über Uns</h2>
         <article>
-            <h3>Titel</h3>
-            <img src="../Bilder/ProfilBild.webp" width="100" alt="Platzhalter">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                dolore
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                dolore
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>$
-                labore
-                    
-        </article>
-        <article>
-            <h3>Titel</h3>
-            <img src="../Bilder/ProfilBild.webp" width="100" alt="Platzhalter">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore
-                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                dolore
-                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet
-                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            <p>Paragraph</p>
+                Willkommen bei Rooper Runner, dem Zuhause von zeitlosem Spielspaß und pixeliger Nostalgie! Unsere Leidenschaft für die goldene Ära der Videospiele hat uns dazu inspiriert, ein einzigartiges 8-Bit-Plattformabenteuer zu erschaffen, das die Herzen der Retro-Gamer höher schlagen lässt. <br><br>
+
+                <b>Unsere Mission:</b>
+
+                Unsere Mission ist es, Spieler auf eine Reise zurück in die Vergangenheit zu entführen, als Spiele noch von pixeligen Helden und herausfordernden Plattformen geprägt waren. Bei Rooper Runner geht es nicht nur um Unterhaltung, sondern auch um die Schaffung einer Community von Gleichgesinnten, die die Freude an klassischen Videospielen teilen. <br><br>
+
+                <b>Was uns antreibt:</b>
+
+                Die Liebe zu pixeligen Welten, kniffligen Rätseln und epischen Bosskämpfen treibt uns an. Unser Team von kreativen Köpfen arbeitet mit Hingabe daran, eine Spielerfahrung zu schaffen, die die Essenz der 8-Bit-Ära einfängt und gleichzeitig frische Ideen und Innovationen einbringt.<br><br>
+
+                <b>Warum Rooper </b>
+
+                Rooper Runner ist mehr als nur ein Spiel. Es ist eine Hommage an die Wurzeln der Gaming-Kultur und eine Einladung, die schier endlose Freude zu erleben, die mit einem pixeligen Jump'n'Run-Abenteuer einhergeht. Unser Streben nach Exzellenz und Liebe zum Detail spiegeln sich in jedem Level, jeder Animation und jedem musikalischen Ton wider.<br><br>
+
+                <b>Kontaktiere uns:</b>
+
+                Möchtest du mehr über die Köpfe hinter Rooper Runner erfahren? Wir freuen uns über Fragen, Feedback und den Austausch von Geschichten über deine eigenen Gaming-Erlebnisse. Kontaktiere uns gerne unter rooperrunner@gmail.com oder besuche unsere Social-Media-Seiten, um Teil der Rooper Runner-Community zu werden.<br><br>
+
+                Vielen Dank, dass du uns auf dieser pixeligen Reise begleitest!            
         </article>
     </main>
     <aside>
@@ -102,19 +83,20 @@
             </ul>
         </div>
     </footer>
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+          }
+        }
+        </script>
 </body>
-<script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "25px";
-      } else {
-        document.getElementById("navbar").style.padding = "80px 10px";
-        document.getElementById("logo").style.fontSize = "35px";
-      }
-    }
-    </script>
+   
 </html>
