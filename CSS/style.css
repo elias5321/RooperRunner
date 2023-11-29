@@ -3,7 +3,7 @@
   --secondary-color: #D1B3CA; /* Sekundärfarbe */
   --accent-color: #735D78; /* Akzentfarbe */
   --third-color: #E8C2CA;
-  --fourth-color: #F7D1CD;
+  --fourth-color: rgb(200, 141, 213);
   }
   
 html, body, h1, h2, h3, ul, li, p {
@@ -32,7 +32,8 @@ html, body, h1, h2, h3, ul, li, p {
  
 #navbar {
   overflow: hidden;
-  background-color: var(--primary-color);
+  background: rgb(115,93,120);
+  background: linear-gradient(90deg, rgba(115,93,120,1) 0%, rgba(179,146,172,1) 30%, rgba(200,141,213,1) 100%);
   padding: 50px 5px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
@@ -91,7 +92,8 @@ html, body, h1, h2, h3, ul, li, p {
   aside {
     grid-area: aside;
     min-height: 100px;
-    background-color: var(--secondary-color);
+    background: rgb(115,93,120);
+    background: radial-gradient(circle, rgba(115,93,120,1) 0%, rgba(200,141,213,1) 92%);
     padding: 10px;
     padding-top: 215px;
   }
@@ -103,7 +105,6 @@ html, body, h1, h2, h3, ul, li, p {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-
   }
   
 #logo_picture{
@@ -177,4 +178,8 @@ img{
   }
   
 }
+.update{
   
+  padding-left: 20px;
+}
+

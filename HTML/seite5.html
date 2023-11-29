@@ -1,129 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seite 5</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.google.com/specimen/Vina+Sans" rel="stylesheet">
+    <title>Sign Up!!!!!</title>
+    <link rel="stylesheet" href="../CSS/signup.css">
 </head>
 <body>
     
-    <div id="navbar">
-        <a href="../index.html" id="logo">Rooper Runner</a>
-        <div id="navbar-right">
-          <a href="../index.html">Home</a>
-          <a href="seite2.html">Über uns</a>
-          <a href="seite3.html">Kontakt</a>
-          <a href="seite4.html">Standort</a>
-          <a class="active" href="seite5.html">Neuigkeiten</a>
-        </div> 
-      </div>
 
-    <main>
-        <h2>Neuigkeiten</h2>
-
-        <article>
-            <h3>Nächstes Update</h3>
-            
-            <p>
-                <ul class="update">
-                    <li>Neue Welt: Betrete die eisigen Gefilde mit frischen Leveln und Herausforderungen</li> <hr>
-                    <li>Freundesmodus: Spiele gemeinsam mit Freunden im Koop-Modus für noch mehr Spaß.</li> <hr>
-                    <li>Charakter-Anpassungen: Individualisiere deinen Rooper mit neuen Skins und Accessoires.</li> <hr>
-                    <li>Belohnungen für Veteranen: Exklusive Boni für langjährige Spieler als Dankeschön.</li><hr>
-                    <li> Verbesserte Gegner-KI: Herausfordernde Gegner mit schlaueren Taktiken für intensivere Kämpfe.</li><hr>
-                    <li>Tägliche Missionen: Verdien dir tägliche Belohnungen durch abwechslungsreiche Aufgaben.</li><hr>
-                    <li> Neue Power-Ups: Entdecke ein Arsenal an neuen Fähigkeiten, um deine Laufreise zu bereichern.</li><hr>
-                    <li>Grafik-Overhaul: Genieße eine noch beeindruckendere visuelle Pracht mit überarbeiteten Grafiken.</li><hr>
-                    <li>Fehlerbehebungen und Stabilitätsverbesserungen: Eine reibungslose Spielerfahrung durch Behebung von Bugs und Verbesserungen der Stabilität.</li><hr>
-                </ul>  
-            </p>
-        </article>
-
-        <h2>Newsletter</h2>
-        <form action=https://gibm.becknet.ch/formular/formular.php target="_blank" method="post">
-            <div>
-                <label id="username">Benutzername *</label><br>
-                <input type="text"
-                 id="benutzername"
-                 name="benutzername"
-                 pattern="[A-Za-z1-9_\.]{4, 30}"
-                 placeholder="min. 4 Zeichen"
-                 required />
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Home</a>
+            <a href="seite2.html">Über Uns</a>
+            <a href="seite3.html">Neuigkeiten</a>
+            <a href="seite4.html">Standort</a>
+          </div>
+          
+          
+      <div class="signup-container">
+        <span onclick="openNav()">Zurück</span>
     
-            <div>
-                <label for="email">Email *</label><br>
-                <input type="text" id="email" name="email" required pattern="([a-z0-9]{1,}([\.\-_][a-z0-9]{1,}){0,})@([a-z0-9]{1,}([\.\-_][a-z0-9]{1,}){0,})\.[a-z]{2,6}"/>
-            </div>
-         
-            <div>
-                <label for="nachricht">Nachricht</label><br>
-                <textarea name="nachricht" id="nachricht" cols="20" rows="3"></textarea>
-                
-            </div>
-         
-            <div>
-                <input type="submit" value="Senden">
-                <input type="reset" value="Löschen">
-            </div>
+        <h2>Sign Up</h2>
+        <form action="seite6.html">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required pattern="([a-z0-9]{1,}([\.\-_][a-z0-9]{1,}){0,})@([a-z0-9]{1,}([\.\-_][a-z0-9]{1,}){0,})\.[a-z]{2,6}">
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required
+          minlength="8">
+    
+          <button type="submit">Sign Up</button>
         </form>
-        
-    </main>
-    <aside>
-        <h2>Randspalte</h2>
-        <article>
-            <h3>Titel</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore
-                et dolore magna aliquyam</p>
-        </article>
-        <article>
-            <h3>Titel</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore
-                et dolore magna aliquyam</p>
-        </article>
-    </aside>
-    <footer>
-        <div>
-            <h3>Kontakt:</h3>
-            <p>Strasse 20<br>1000 Ort<br>Telefon:<br>Email:</p>
-        </div>
-        <div>
-            <h3>Social:</h3>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Links:</h3>
-            <ul>
-                <li><a href="impressum.html">Impressum</a></li>
-                <li><a href="disclamer.html">Disclamer</a></li>
-                <li><a href="datenschutz.html">Datenschutz</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-<script>
-   
-    window.onscroll = function() {scrollFunction()};
+      </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
     
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "25px";
-      } else {
-        document.getElementById("navbar").style.padding = "80px 10px";
-        document.getElementById("logo").style.fontSize = "35px";
-      }
-    }
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+          }
     </script>
+    
+</body>
 </html>
