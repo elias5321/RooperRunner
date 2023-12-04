@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seite 1</title>
-    <link rel="stylesheet" href="/RooperRunner/CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="/RooperRunner/HTML/favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="HTML/favicon.ico">
     <link href="https://fonts.google.com/specimen/Vina+Sans" rel="stylesheet">
 </head>
 <body>
@@ -18,10 +18,10 @@
         </div>
         <div id="navbar-right">
           <a class="active" href="index.html">Home</a>
-          <a href="/RooperRunner/HTML/seite2.html">Über uns</a>
-          <a href="/RooperRunner/HTML/seite3.html">Neuigkeiten</a>
-          <a href="/RooperRunner/HTML/seite4.html">Standort</a>
-          <a href="/RooperRunner/HTML/seite5.html">Sign up</a>
+          <a href="HTML/seite2.html">Über uns</a>
+          <a href="HTML/seite3.html">Neuigkeiten</a>
+          <a href="HTML/seite4.html">Standort</a>
+          <a href="HTML/seite5.html">Sign up</a>
         </div>
       </div>
 
@@ -33,14 +33,14 @@
             <h3>Screenshots vom Spiel</h3>
         </article>
         <div class="w3-content w3-display-container">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild1.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild2.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild3.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild4.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild5.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild6.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild7.png" alt="" style="width:80%">
-            <img class="mySlides" src="/RooperRunner/Bilder/Bild8.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild1.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild2.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild3.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild4.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild5.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild8.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild6.png" alt="" style="width:80%">
+            <img class="mySlides" src="Bilder/Bild7.png" alt="" style="width:80%">
           
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -77,44 +77,44 @@
         <div>
             <h3>Links:</h3>
             <ul>
-                <li><a href="/RooperRunner/HTML/impressum.html">Impressum</a></li>
-                <li><a href="/RooperRunner/HTML/disclaimer.html">Disclaimer</a></li>
-                <li><a href="/RooperRunner/HTML/datenschutz.html">Datenschutz</a></li>
+                <li><a href="HTML/impressum.html">Impressum</a></li>
+                <li><a href="HTML/disclaimer.html">Disclaimer</a></li>
+                <li><a href="HTML/datenschutz.html">Datenschutz</a></li>
             </ul>
         </div>
     </footer>
-</body>
-<script>
+    <script>
    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "25px";
-      } else {
-        document.getElementById("navbar").style.padding = "80px 10px";
-        document.getElementById("logo").style.fontSize = "35px";
-      }
-    }
-    
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-            
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              if (n > x.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              x[slideIndex-1].style.display = "block";  
-            }
-            
-    </script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "30px 10px";
+            document.getElementById("logo").style.fontSize = "25px";
+          } else {
+            document.getElementById("navbar").style.padding = "80px 10px";
+            document.getElementById("logo").style.fontSize = "35px";
+          }
+        }
+        
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                
+        </script>
+</body>
 </html>
