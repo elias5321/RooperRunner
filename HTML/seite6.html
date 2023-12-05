@@ -12,22 +12,25 @@
 </head>
 <body>
     
-    <div id="navbar">
-        <div class="header">
-            <a href="index.html" id="logo">Rooper Runner</a>
-        </div>
-        <div id="navbar-right">
-          <a class="active" href="../index.html">Home</a>
-          <a href="seite2.html">Über uns</a>
-          <a href="seite3.html">Neuigkeiten</a>
-          <a href="seite4.html">Standort</a>
-          <a href="seite5.html">Sign up</a>
-        </div>
-      </div>
+  <div id="navbar">
+    <div class="header">
+        <a href="../index.html" id="logo">Rooper Runner</a>
+        <span class="onclick" onclick="openNav()"> ≡</span>
+    </div>
+   
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="../index.html">Home</a>
+    <a href="seite2.html">Über Uns</a>
+    <a href="seite3.html">Neuigkeiten</a>
+    <a href="seite4.html">Standort</a>
+    <a href="seite5.html">Sign Up</a>
+  </div>
 
     <main>
         <h1>Vielen Dank für die Anmeldung</h1>
-        <h3>Sie werden auch nicht gescammt oder so</h3>
+        
     </main>
     <aside>
         <h2>Randspalte</h2>
@@ -80,22 +83,18 @@
         }
       }
       
-              var slideIndex = 1;
-              showDivs(slideIndex);
-              
-              function plusDivs(n) {
-                showDivs(slideIndex += n);
+      function openNav() {
+                
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
               }
               
-              function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = x.length}
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";  
-                }
-                x[slideIndex-1].style.display = "block";  
+              /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
               }
               
       </script>

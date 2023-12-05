@@ -15,14 +15,17 @@
     <div id="navbar">
         <div class="header">
             <a href="index.html" id="logo">Rooper Runner</a>
+            <span class="onclick" onclick="openNav()"> ≡</span>
         </div>
-        <div id="navbar-right">
-          <a class="active" href="index.html">Home</a>
-          <a href="HTML/seite2.html">Über uns</a>
-          <a href="HTML/seite3.html">Neuigkeiten</a>
-          <a href="HTML/seite4.html">Standort</a>
-          <a href="HTML/seite5.html">Sign up</a>
-        </div>
+       
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="HTML/seite2.html">Über Uns</a>
+        <a href="HTML/seite3.html">Neuigkeiten</a>
+        <a href="HTML/seite4.html">Standort</a>
+        <a href="HTML/seite5.html">Sign Up</a>
       </div>
 
     <main>
@@ -84,19 +87,6 @@
         </div>
     </footer>
     <script>
-   
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "30px 10px";
-            document.getElementById("logo").style.fontSize = "25px";
-          } else {
-            document.getElementById("navbar").style.padding = "80px 10px";
-            document.getElementById("logo").style.fontSize = "35px";
-          }
-        }
-        
                 var slideIndex = 1;
                 showDivs(slideIndex);
                 
@@ -114,6 +104,21 @@
                   }
                   x[slideIndex-1].style.display = "block";  
                 }
+
+                function openNav() {
+                
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+              }
+              
+              /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+                document.body.style.backgroundColor = "white";
+              }
+              
                 
         </script>
 </body>

@@ -14,12 +14,9 @@ html, body, h1, h2, h3, ul, li, p {
   body {
     
     box-sizing: border-box;
-    max-width: 1200px;
     margin: 0 auto;
-    
     display: grid;
-    grid-template-columns: 180px 2fr 180px;
-    
+    grid-template-columns: 10% 2fr 20%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     grid-template-areas: 
     "header header header"
@@ -29,7 +26,11 @@ html, body, h1, h2, h3, ul, li, p {
     ;
   }
   
- 
+ .onclick{
+  position: fixed;
+  margin-left: 65%;
+  font-size: larger;
+ }
 #navbar {
   overflow: hidden;
   background: rgb(115,93,120);
@@ -55,16 +56,13 @@ html, body, h1, h2, h3, ul, li, p {
 
 /* Style the logo */
 #navbar #logo {
-  font-size: 35px;
+  font-size: 2em;
   font-weight: bold;
   transition: 0.3s;
 }
 
 /* Links on mouse-over */
-#navbar a:hover {
-  background-color: var(--accent-color);
-  color: black;
-}
+
 
 /* Style the active/current link */
 #navbar a.active {
@@ -74,7 +72,7 @@ html, body, h1, h2, h3, ul, li, p {
 
 /* Display some links to the right */
 #navbar-right {
-  float: right;
+  float: left;
   margin-right: 10px;
 }
 
@@ -86,7 +84,7 @@ html, body, h1, h2, h3, ul, li, p {
     text-align: justify;
     padding: 10px;
     overflow: auto;
-    padding-top: 215px;
+    margin-top: 20%;
   }
   
   aside {
@@ -144,6 +142,8 @@ img{
     justify-content: center;
   }
 
+
+
   #navbar a {
     float: left;
     color: black;
@@ -154,7 +154,7 @@ img{
     line-height: 25px;
     border-radius: 4px;
     display: block;
-    font-size: 3;
+    font-size: 3em;
   }
   #logo{
     text-align: center;
@@ -167,15 +167,21 @@ img{
     "aside aside aside"
     "footer footer footer"
     ;
+    zoom: none;
   }
+
+.onclick{
+  margin-left: 10%;
+}
 
   aside{
     padding-top: 10px;
     
   }
   main{
-    padding-top: 310px;
+    padding-top: 20%;
   }
+  
   
 }
 .update{
@@ -183,3 +189,57 @@ img{
   padding-left: 20px;
 }
 
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.onclick{
+  float: left;
+  
+  font-size: 2em;
+}

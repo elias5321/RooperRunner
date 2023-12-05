@@ -12,16 +12,18 @@
 </head>
 <body>
     
-    <div id="navbar">
-        <div class="header">
-            <a href="index.html" id="logo">Rooper Runner</a>
+  <div id="navbar">
+    <div class="header">
+        <a href="../index.html" id="logo">Rooper Runner</a>
+        <span class="onclick" onclick="openNav()"> ≡</span>
+    </div>
         </div>
         <div id="navbar-right">
-          <a href="index.html">Home</a>
-          <a href="/RooperRunner/HTML/seite2.html">Über uns</a>
-          <a href="/RooperRunner/HTML/seite3.html">Neuigkeiten</a>
-          <a href="/RooperRunner/HTML/seite4.html">Standort</a>
-          <a href="/RooperRunner/HTML/seite5.html">Sign up</a>
+          <a href="../index.html">Home</a>
+          <a href="seite2.html">Über uns</a>
+          <a href="seite3.html">Neuigkeiten</a>
+          <a href="seite4.html">Standort</a>
+          <a href="seite5.html">Sign up</a>
         </div>
       </div>
 
@@ -87,33 +89,18 @@
    
       window.onscroll = function() {scrollFunction()};
       
-      function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.getElementById("navbar").style.padding = "30px 10px";
-          document.getElementById("logo").style.fontSize = "25px";
-        } else {
-          document.getElementById("navbar").style.padding = "80px 10px";
-          document.getElementById("logo").style.fontSize = "35px";
-        }
-      }
-      
-              var slideIndex = 1;
-              showDivs(slideIndex);
-              
-              function plusDivs(n) {
-                showDivs(slideIndex += n);
-              }
-              
-              function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = x.length}
-                for (i = 0; i < x.length; i++) {
-                  x[i].style.display = "none";  
-                }
-                x[slideIndex-1].style.display = "block";  
-              }
+      function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+    
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+          }
               
       </script>
 </body>

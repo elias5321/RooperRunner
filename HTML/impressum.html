@@ -11,19 +11,23 @@
 </head>
 <body>
     
-    <div id="navbar">
-        <a href="../index.html" id="logo">Rooper Runner</a>
-            <div id="navbar-right">
-              <a href="../index.html">Home</a>
-              <a href="seite2.html">Über uns</a>
-              <a href="seite3.html">Neuigkeiten</a>
-              <a href="seite4.html">Standort</a>
-              <a href="seite5.html">Sign up</a>
+     <div id="navbar">
+        <div class="header">
+            <a href="../index.html" id="logo">Rooper Runner</a>
+            <span class="onclick" onclick="openNav()"> ≡</span>
         </div>
+       
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="seite2.html">Über Uns</a>
+        <a href="seite3.html">Neuigkeiten</a>
+        <a href="seite4.html">Standort</a>
+        <a href="seite5.html">Sign Up</a>
       </div>
 
     <main>
-        
         <div class='impressum'><h1>Impressum</h1><p>Angaben gemäß § 5 TMG</p><p>Elias Düggeli <br> 
             Ebenrainweg 13<br> 
             4450 Sissach <br> 
@@ -43,25 +47,11 @@
              </div>
              
     </main>
-    <aside>
-        <h2>Randspalte</h2>
-        <article>
-            <h3>Titel</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore
-                et dolore magna aliquyam</p>
-        </article>
-        <article>
-            <h3>Titel</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore
-                et dolore magna aliquyam</p>
-        </article>
-    </aside>
+    
     <footer>
         <div>
             <h3>Kontakt:</h3>
-            <p>Ebenrainweg 13<br>4450 Sissach<br><a href="tel:+41775096613">+41 77 509 66 13</a><br><a href="mailto:eliasduggeli@gmail.com"></a></p>
+            <p>Strasse 20<br>1000 Ort<br>Telefon:<br>Email:</p>
         </div>
         <div>
             <h3>Social:</h3>
@@ -84,15 +74,18 @@
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {scrollFunction()};
         
-        function scrollFunction() {
-          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "30px 10px";
-            document.getElementById("logo").style.fontSize = "25px";
-          } else {
-            document.getElementById("navbar").style.padding = "80px 10px";
-            document.getElementById("logo").style.fontSize = "35px";
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
           }
-        }
+    
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+          }
         </script>
 </body>
    
